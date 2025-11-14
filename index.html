@@ -1,1 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Внутренний Регламент Организации</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #121212;
+            --secondary-color: #1e1e1e;
+            --accent-color: #2a2a2a;
+            --text-color: #e0e0e0;
+            --highlight-color: #d92332;
+            --title-color: #4a90e2;
+            --border-color: #333;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        
+        .codex-header {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 1.5rem 0;
+            text-align: center;
+            border-bottom: 2px solid var(--border-color);
+        }
+        
+        .header-content h1 {
+            font-family: 'Playfair Display', serif;
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: white;
+        }
+        
+        .codex-container {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .codex-section {
+            flex: 1;
+            padding: 0 30px;
+        }
+        
+        .codex-section h2 {
+            font-family: 'Playfair Display', serif;
+            color: var(--title-color);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+            margin: 30px 0 20px;
+            font-size: 1.8rem;
+        }
+        
+        .codex-article {
+            background-color: var(--secondary-color);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-left: 3px solid var(--border-color);
+        }
+        
+        .codex-article h3 {
+            margin: 0 0 15px 0;
+            color: var(--text-color);
+            font-size: 1.3rem;
+            font-weight: 500;
+        }
+        
+        .punishment {
+            font-weight: bold;
+            color: var(--highlight-color);
+            margin: 15px 0 0;
+            padding: 10px 0;
+            border-top: 1px solid var(--border-color);
+        }
+        
+        ul, ol {
+            padding-left: 25px;
+            margin: 10px 0;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        @media (max-width: 768px) {
+            .codex-container {
+                flex-direction: column;
+                padding: 10px;
+            }
+            
+            .codex-section {
+                padding: 0 15px;
+            }
+            
+            .header-content h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <custom-header></custom-header>
+<div class="codex-container">
+        <custom-sidebar></custom-sidebar>
+        
+        <main class="codex-section">
+            <section id="section1" class="codex-section">
+                <h2>Раздел 1 – Общие принципы регламента</h2>
+                
+                <article id="article1-2" class="codex-article">
+                    <h3>Пункт 1.1. Виды дисциплинарных мер</h3>
+<ol>
+                        <li>Устное предупреждение ( За малые нарушения )</li>
+                        <li>Удар дубинкой</li>
+                        <li>Первый выговор </li>
+                        <li>Второй выговор</li>
+                        <li>Третий выговор</li>
+                        <li>Расстрел</li>
+                    </ol>
+                </article>
+
+                <article id="article1-3" class="codex-article">
+                    <h3>Пункт 1.2. Принцип неприкосновенности</h3>
+<p>Сотрудники теряют право на неприкосновенность в случае нарушения правил или в случае подозрения на заражение.</p>
+                </article>
+
+                <article id="article1-4" class="codex-article">
+                    <h3>Пункт 1.4. Нейтралитет по отношению к SGA</h3>
+<p>Вы не вмешиваетесь и не задерживаете нарушителей, если они нарушают правила по отношению к сотрудникам SGA.</p>
+                </article>
+            </section>
+
+            <section id="section2" class="codex-section">
+                <h2>Раздел 2 – Защита персонала</h2>
+                
+                <article id="article2-1" class="codex-article">
+                    <h3>Пункт 2.1. Умышленное убийство</h3>
+<p>Преднамеренное лишение жизни другого человека.</p>
+                    <p class="punishment">Наказание: Расстрел</p>
+                </article>
+
+                <article id="article2-2" class="codex-article">
+                    <h3>Пункт 2.2. Непредумышленное убийство</h3>
+<p>Причинение смерти по неосторожности.</p>
+                    <p class="punishment">Наказание: Нарушитель передаётся сотрудникам SGA для применения дисциплинарных мер.</p>
+                </article>
+
+                <article id="article2-4" class="codex-article">
+                    <h3>Пункт 2.3. Массовые убийства</h3>
+<p>Умышленное лишение жизни другого человека.</p>
+                    <p class="punishment">Наказание: Расстрел</p>
+                </article>
+
+                <article id="article2-5" class="codex-article">
+                    <h3>Пункт 2.4. Поведение сексуального характера</h3>
+<p>Любые действия или поведение сексуального характера, включая непристойные жесты, намёки.</p>
+                    <p class="punishment">Наказание: Нарушитель передаётся сотрудникам SGA для применения дисциплинарных мер.</p>
+                </article>
+
+                <article id="article2-7" class="codex-article">
+                    <h3>Пункт 2.5. Пытки</h3>
+<p>Допустимы только по отношению к сотрудникам враждебных организаций при наличии доказательств.</p>
+                    <p class="punishment">Наказание: Расстрел</p>
+                </article>
+            </section>
+
+            <section id="section3" class="codex-section">
+                <h2>Раздел 3 – Общественные правила</h2>
+                
+                <article id="article3-1" class="codex-article">
+                    <h3>Пункт 3.1. Употребление запрещенных веществ</h3>
+<p>1) Наркотики</p>
+<p>2) Психотропные вещества</p>
+<p>3) Алкоголь в неположенном месте</p>
+<p class="punishment">Наказание: Расстрел</p>
+                </article>
+
+                <article id="article3-2" class="codex-article">
+                    <h3>Пункт 3.2. Хранение и распространение наркотических веществ</h3>
+<p>Любые действия, связанные с приобретением, распространением наркотических веществ.</p>
+<p class="punishment">Наказание: Расстрел</p>
+                </article>
+
+                <article id="article3-3" class="codex-article">
+                    <h3>Пункт 3.3. Драки и конфликты</h3>
+<p>Любые столкновения между людьми с применением предметов или оружия, наносящие вред здоровью.</p>
+<p class="punishment">Наказание: Расстрел</p>
+                </article>
+            </section>
+
+            <section id="section4" class="codex-section">
+                <h2>Раздел 4 – Преступления против организации</h2>
+                
+                <article id="article4-1" class="codex-article">
+                    <h3>Пункт 4.1. Шпионаж</h3>
+<p>Сбор секретной информации с целью передачи третьим лицам.</p>
+<p class="punishment">Наказание: Расстрел</p>
+                </article>
+
+                <article id="article4-2" class="codex-article">
+                    <h3>Пункт 4.2. Диверсии</h3>
+<p>Действия, направленные на разрушение или повреждение объектов организации, а также на убийство персонала.</p>
+<p class="punishment">Наказание: Расстрел</p>
+                </article>
+
+                <article id="article4-3" class="codex-article">
+                    <h3>Пункт 4.3. Похищение сотрудников или документов</h3>
+<p>Несанкционированное похищение сотрудников или изъятие конфиденциальных материалов с целью получения секретной информации.</p>
+<p class="punishment">Наказание: Расстрел</p>
+                </article>
+
+                <article id="article4-4" class="codex-article">
+                    <h3>Пункт 4.4. Похищение исследуемых объектов</h3>
+<p>Несанкционированное изъятие вирусов или иных исследуемых объектов.</p>
+<p class="punishment">Наказание: Расстрел</p>
+                </article>
+
+                <article id="article4-5" class="codex-article">
+                    <h3>Пункт 4.5. Несогласованная передача ресурсов</h3>
+<p>Передача имущества организации третьим лицам без разрешения уполномоченных лиц.</p>
+<p class="punishment">Наказание: Расстрел</p>
+                </article>
+
+                <article id="article4-6" class="codex-article">
+                    <h3>Пункт 4.6. Дезертирство</h3>
+<p>Переход на сторону враждебной организации.</p>
+<p class="punishment">Наказание: Расстрел</p>
+                </article>
+
+                <article id="article4-7" class="codex-article">
+                    <h3>Пункт 4.7. Мятеж</h3>
+<p>Любые действия, направленные против руководства организации.</p>
+<p class="punishment">Наказание: Расстрел</p>
+                </article>
+
+                <article id="article4-8" class="codex-article">
+                    <h3>Пункт 4.8. Саботаж</h3>
+<p>Намеренные действия или бездействие, мешающие выполнению задач организации.</p>
+<p class="punishment">Наказание: Расстрел</p>
+                </article>
+
+            <section id="section5" class="codex-section">
+                <h2>Раздел 5 – Преступления против человечества</h2>
+                
+                <article id="article5-1" class="codex-article">
+                    <h3>Пункт 5.1. Использование опасных объектов</h3>
+<p>Применение вирусов, аномалий или иных объектов для причинения вреда человечеству.</p>
+<p class="punishment">Наказание: расстрел</p>
+                </article>
+            </section>
+
+            <section id="section6" class="codex-section">
+                <h2>Раздел 6 – Дисциплинарные нарушения</h2>
+                
+                <article id="article6-1" class="codex-article">
+                    <h3>Пункт 6.1. Несоблюдение субординации</h3>
+<p>Неподчинение старшим по званию или должности, а также некорректное общение.</p>
+<p class="punishment">Наказание: Удар дубинкой</p>
+                </article>
+
+                <article id="article6-2" class="codex-article">
+                    <h3>Пункт 6.2. Личное использование ресурсов</h3>
+<p>Применение объектов или ресурсов организации в личных целях без разрешения.</p>
+<p class="punishment">Наказание: Расстрел</p>
+                </article>
+
+                <article id="article6-3" class="codex-article">
+                    <h3>Пункт 6.3. Превышение полномочий</h3>
+<p>Использование служебного положения для действий, не входящих в обязанности, и нарушающих права сотрудников или интересы организации.</p>
+<p class="punishment">Наказание: Расстрел</p>
+                </article>
+
+                <article id="article6-4" class="codex-article">
+                    <h3>Пункт 6.4. Неэтичное поведение</h3>
+<p>Действия, противоречащие нормам этики, за исключением научной деятельности.</p>
+<p class="punishment">Наказание: Нарушитель передаётся сотрудникам SGA для применения дисциплинарных мер.</p>
+                </article>
+
+                <article id="article6-5" class="codex-article">
+                    <h3>Пункт 6.5. Растрата ресурсов</h3>
+<p>Нецелевое или нерациональное использование имущества организации.</p>
+<p class="punishment">Наказание: Расстрел</p>
+                </article>
+
+                <article id="article6-6" class="codex-article">
+                    <h3>Пункт 6.6. Нарушение правил внутреннего порядка</h3>
+<p>Действия, которые противоречат установленным регламентом и внутренним правилам организации.</p>
+<p class="punishment">Наказание: Нарушитель передаётся сотрудникам SGA для применения дисциплинарных мер.</p>
+                </article>
+
+                <article id="article6-5" class="codex-article">
+                    <h3>Пункт 6.7. Провокация</h3>
+<p>Намеренные действия или слова, направленные на создание конфликта, раздражение сотрудников ОГБ.</p>
+<p class="punishment">Наказание: Расстрел</p>
+                </article>
+
+                <article id="article6-5" class="codex-article">
+                    <h3>Пункт 6.8. Неподчинение</h3>
+<p>Отказ выполнять приказы или указания сотрудников ОГБ.</p>
+<p class="punishment">Наказание: Расстрел</p>
+                </article>
+
+                <article id="article6-5" class="codex-article">
+                    <h3>Пункт 6.9. Угроза жизни</h3>
+<p>Целиться или направлять оружие на сотрудников ОГБ.</p>
+<p class="punishment">Наказание: Расстрел</p>
+                </article>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
+
 
